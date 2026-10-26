@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINITT 迷你天堂 - 71級頂級法師帳號 尊榮出售</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lineage: {
+                            bg: '#0a0a0d',
+                            panel: '#121218',
+                            panelBorder: '#2a241e',
+                            gold: '#d4af37',
+                            goldLight: '#f3e5ab',
+                            goldDark: '#8a6d1c',
+                            red: '#991b1b',
+                            redBright: '#ef4444',
+                            purple: '#a855f7',
+                            pink: '#ec4899',
+                            blue: '#3b82f6',
+                            green: '#22c55e',
+                            statBg: '#1a1816',
+                            slotBg: '#18171c'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        serifTC: ['Noto Serif TC', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #08080a;
+            color: #d1d5db;
+            font-family: 'Noto Serif TC', 'Cinzel', serif;
+            background-image: radial-gradient(circle at 50% 0%, #1c150c 0%, #08080a 70%);
+            background-attachment: fixed;
+        }
+
+        /* Gothic Metallic Frame Style */
+        .lineage-frame {
+            background: linear-gradient(145deg, #16151c 0%, #0d0d12 100%);
+            border: 2px solid #3d3122;
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.8), 0 5px 20px rgba(0,0,0,0.7);
+            position: relative;
+        }
+        
+        .lineage-frame::before {
+            content: '';
+            position: absolute;
+            top: -1px; left: -1px; right: -1px; bottom: -1px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            pointer-events: none;
+        }
+
+        .gold-border {
+            border-color: #8a6d1c;
+        }
+
+        /* Gold Gradient Text */
+        .gold-text {
+            background: linear-gradient(180deg, #fff7d6 0%, #d4af37 50%, #997519 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Red Glowing Text */
+        .red-glow-text {
+            color: #f87171;
+            text-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
+        }
+
+        /* Gold Glow Button */
+        .btn-gold {
+            background: linear-gradient(180deg, #8a6d1c 0%, #4a3a0f 100%);
+            border: 1px solid #d4af37;
+            color: #fff7d6;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            transition: all 0.25s ease;
+        }
+        .btn-gold:hover {
+            background: linear-gradient(180deg, #b89228 0%, #665014 100%);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            transform: translateY(-1px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d0d12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a241e;
+            border: 1px solid #4a3a0f;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8a6d1c;
+        }
+
+        /* Equipment Slot Styling */
+        .eq-slot {
+            position: relative;
+            background: radial-gradient(circle, #25232d 0%, #111016 100%);
+            border: 2px solid #3d3122;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.9);
+            transition: all 0.2s ease;
+        }
+        .eq-slot:hover {
+            border-color: #d4af37;
+            box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+            transform: scale(1.03);
+            z-index: 10;
+        }
+
+        /* Table Styling */
+        .lineage-table th {
+            background: linear-gradient(180deg, #221e1a 0%, #141210 100%);
+            border-bottom: 2px solid #52422d;
+            color: #d4af37;
+        }
+        .lineage-table tr {
+            border-bottom: 1px solid #222026;
+            transition: background 0.15s ease;
+        }
+        .lineage-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.05);
+        }
+
+        /* Pulse animation */
+        @keyframes goldPulse {
+            0%, 100% { opacity: 0.8; box-shadow: 0 0 10px rgba(212, 175, 55, 0.3); }
+            50% { opacity: 1; box-shadow: 0 0 25px rgba(212, 175, 55, 0.7); }
+        }
+        .pulse-gold {
+            animation: goldPulse 3s infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-16">
+
+    <!-- TOP ANNOUNCEMENT BANNER -->
+    <div class="bg-gradient-to-r from-red-950 via-amber-950 to-red-950 border-b border-amber-600/40 text-amber-200 text-xs sm:text-sm py-2 px-4 text-center tracking-wider flex items-center justify-center gap-2 shadow-lg">
+        <i class="fa-solid fa-crown text-amber-400 animate-bounce"></i>
+        <span>全服罕見頂級法師帳號 - T1粉滿變身/娃娃 | 魔爆 555%+ | 雙榜全服前列</span>
+        <i class="fa-solid fa-crown text-amber-400 animate-bounce"></i>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 space-y-8">
+
+        <!-- HEADER SECTION -->
+        <header class="lineage-frame rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden pulse-gold">
+            <div class="absolute -top-24 -left-24 w-60 h-60 bg-amber-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="inline-block border-b-2 border-amber-500/50 pb-1 mb-2">
+                <span class="text-xs uppercase tracking-[0.3em] text-amber-400/80 font-cinzel">MINITT Lineage Account Sale</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-black gold-text tracking-wide mb-3 font-serifTC">
+                迷你天堂 ‧ 頂級殿堂法師帳號
+            </h1>
+            
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base mb-6 leading-relaxed">
+                全服極致魔爆輸出，裝備完美附魔與天啟加持！配備 <span class="text-amber-300 font-bold">T1粉滿雙神魂</span> 與豐富資源，誠意尋找下一位強者接手。
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                <button onclick="openModal()" class="btn-gold px-8 py-3 rounded-xl font-bold text-base flex items-center gap-2 shadow-xl">
+                    <i class="fa-solid fa-paper-plane"></i> 立即聯繫賣家詢價
+                </button>
+                <a href="#equipment-section" class="bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700 text-gray-300 px-6 py-3 rounded-xl font-medium text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-amber-400"></i> 查看完整裝備明細
+                </a>
+            </div>
+        </header>
+
+        <!-- HIGHLIGHT CARDS GRID -->
+        <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+            <!-- Card 1 -->
+            <div class="lineage-frame p-4 rounded-xl text-center border-amber-900/40">
+                <div class="text-xs text-gray-400 mb-1">等級 / 戰力</div>
+                <div class="text-xl sm:text-2xl font-black text-amber-300 font-cinzel">71 級</div>
+                <div class="text-xs text-amber-500/90 font-bold mt-1">戰力: 64,379</div>
+            </div>
+            <!-- Card 2 -->
+            <div class="lineage-frame p-4 rounded-xl text-center border-amber-900/40">
+                <div class="text-xs text-gray-400 mb-1">PVP / 黑市排名</div>
+                <div class="text-xl sm:text-2xl font-black text-red-400 font-cinzel">全服 第2名</div>
+                <div class="text-xs text-gray-300 mt-1">黑市: 總7~8 / 職2</div>
+            </div>
+            <!-- Card 3 -->
+            <div class="lineage-frame p-4 rounded-xl text-center border-amber-900/40">
+                <div class="text-xs text-gray-400 mb-1">變身 / 魔法娃娃</div>
+                <div class="text-lg sm:text-xl font-black text-pink-400">T1粉滿</div>
+                <div class="text-xs text-pink-300/80 mt-1">+ T2各兩隻</div>
+            </div>
+            <!-- Card 4 -->
+            <div class="lineage-frame p-4 rounded-xl text-center border-amber-900/40">
+                <div class="text-xs text-gray-400 mb-1">核心智力 (Int)</div>
+                <div class="text-xl sm:text-2xl font-black text-blue-400 font-cinzel">165</div>
+                <div class="text-xs text-blue-300/70 mt-1">(不含5智娃娃)</div>
+            </div>
+            <!-- Card 5 -->
+            <div class="lineage-frame p-4 rounded-xl text-center border-amber-900/40">
+                <div class="text-xs text-gray-400 mb-1">魔法爆擊 (Magic Crit)</div>
+                <div class="text-xl sm:text-2xl font-black text-amber-400 font-cinzel">555 %</div>
+                <div class="text-xs text-amber-300/80 mt-1">極致核彈級輸出</div>
+            </div>
+            <!-- Card 6 -->
+            <div class="lineage-frame p-4 rounded-xl text-center border-amber-900/40">
+                <div class="text-xs text-gray-400 mb-1">每日南瓜收益</div>
+                <div class="text-lg sm:text-xl font-black text-emerald-400">1.5萬+ 綁鑽</div>
+                <div class="text-xs text-emerald-300/70 mt-1">金幣 46.8億</div>
+            </div>
+        </section>
+
+        <!-- MAIN DASHBOARD: STATS PANEL + ASSETS & SPECS -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+            <!-- LEFT SIDE: CHARACTER STATS UI (Recreating Screenshot Style) -->
+            <div class="lg:col-span-5 lineage-frame p-5 sm:p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-amber-900/40 pb-3 mb-4">
+                        <h2 class="text-lg font-bold text-amber-400 flex items-center gap-2">
+                            <i class="fa-solid fa-user-shield"></i> 角色屬性面板 (Character Panel)
+                        </h2>
+                        <span class="text-xs bg-amber-950/80 text-amber-300 border border-amber-700/50 px-2 py-0.5 rounded">
+                            正義值 32767
+                        </span>
+                    </div>
+
+                    <!-- Top Combat Stats Banner -->
+                    <div class="grid grid-cols-3 gap-2 bg-zinc-950/80 border border-zinc-800 p-3 rounded-xl mb-5 text-center">
+                        <div>
+                            <div class="text-[11px] text-gray-400 mb-0.5"><i class="fa-solid fa-fire text-red-500 mr-1"></i>戰力</div>
+                            <div class="text-lg font-black text-amber-300 font-cinzel">64379</div>
+                        </div>
+                        <div>
+                            <div class="text-[11px] text-gray-400 mb-0.5"><i class="fa-solid fa-bolt text-yellow-500 mr-1"></i>攻&詠唱速</div>
+                            <div class="text-sm font-bold text-gray-200">484<span class="text-xs text-amber-400/80">(0.26s)</span></div>
+                        </div>
+                        <div>
+                            <div class="text-[11px] text-gray-400 mb-0.5"><i class="fa-solid fa-shield text-blue-400 mr-1"></i>物防/魔防</div>
+                            <div class="text-xs font-bold text-gray-200">-325 / <span class="text-purple-400">487</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Attribute Stat Block -->
+                    <div class="space-y-2.5">
+                        <!-- STR -->
+                        <div class="flex items-center justify-between bg-zinc-900/80 border border-zinc-800 p-2.5 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 text-xs font-bold text-amber-500/80 tracking-wider">STR</span>
+                                <span class="text-gray-400 text-xs">力量</span>
+                            </div>
+                            <div class="text-lg font-bold text-amber-200 font-cinzel pr-2">33</div>
+                        </div>
+                        <!-- DEX -->
+                        <div class="flex items-center justify-between bg-zinc-900/80 border border-zinc-800 p-2.5 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 text-xs font-bold text-amber-500/80 tracking-wider">DEX</span>
+                                <span class="text-gray-400 text-xs">敏捷</span>
+                            </div>
+                            <div class="text-lg font-bold text-amber-200 font-cinzel pr-2">27</div>
+                        </div>
+                        <!-- INT (Highlight) -->
+                        <div class="flex items-center justify-between bg-amber-950/30 border border-amber-600/50 p-2.5 rounded-lg shadow-inner">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 text-xs font-black text-amber-400 tracking-wider">INT</span>
+                                <span class="text-amber-300 font-bold text-xs">智力 (核心)</span>
+                            </div>
+                            <div class="text-2xl font-black text-amber-300 font-cinzel pr-2 text-shadow">165</div>
+                        </div>
+                        <!-- CON -->
+                        <div class="flex items-center justify-between bg-zinc-900/80 border border-zinc-800 p-2.5 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 text-xs font-bold text-amber-500/80 tracking-wider">CON</span>
+                                <span class="text-gray-400 text-xs">體質</span>
+                            </div>
+                            <div class="text-lg font-bold text-amber-200 font-cinzel pr-2">67</div>
+                        </div>
+                        <!-- WIS -->
+                        <div class="flex items-center justify-between bg-zinc-900/80 border border-zinc-800 p-2.5 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 text-xs font-bold text-amber-500/80 tracking-wider">WIS</span>
+                                <span class="text-gray-400 text-xs">精神</span>
+                            </div>
+                            <div class="text-lg font-bold text-amber-200 font-cinzel pr-2">42</div>
+                        </div>
+                        <!-- CHA -->
+                        <div class="flex items-center justify-between bg-zinc-900/80 border border-zinc-800 p-2.5 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 text-xs font-bold text-amber-500/80 tracking-wider">CHA</span>
+                                <span class="text-gray-400 text-xs">魅力</span>
+                            </div>
+                            <div class="text-lg font-bold text-amber-200 font-cinzel pr-2">28</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Movement Stat -->
+                <div class="mt-4 pt-3 border-t border-zinc-800 text-xs text-gray-400 flex justify-between items-center">
+                    <span><i class="fa-solid fa-person-running text-amber-500 mr-1"></i> 移動速度</span>
+                    <span class="font-bold text-gray-200 font-cinzel">235</span>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: ACCOUNT ASSETS & DETAILS -->
+            <div class="lg:col-span-7 space-y-6 flex flex-col justify-between">
+                
+                <!-- Assets Grid -->
+                <div class="lineage-frame p-5 sm:p-6 rounded-2xl">
+                    <h3 class="text-md font-bold text-amber-400 border-b border-amber-900/40 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-coins"></i> 帳號資產與資源庫 (Resource Overview)
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                        <div class="bg-zinc-950/80 p-3 rounded-xl border border-zinc-800">
+                            <div class="text-xs text-gray-400 mb-1">可交易活鑽</div>
+                            <div class="text-lg font-bold text-amber-300 font-cinzel">6.5 萬</div>
+                            <div class="text-[10px] text-gray-500 mt-0.5">可自由流通消費</div>
+                        </div>
+                        <div class="bg-zinc-950/80 p-3 rounded-xl border border-zinc-800">
+                            <div class="text-xs text-gray-400 mb-1">綁定鑽石</div>
+                            <div class="text-lg font-bold text-amber-400 font-cinzel">9.3 萬</div>
+                            <div class="text-[10px] text-gray-500 mt-0.5">點數物資充沛</div>
+                        </div>
+                        <div class="bg-zinc-950/80 p-3 rounded-xl border border-zinc-800">
+                            <div class="text-xs text-gray-400 mb-1">金幣庫存</div>
+                            <div class="text-lg font-bold text-yellow-400 font-cinzel">46.8 億</div>
+                            <div class="text-[10px] text-gray-500 mt-0.5">強大後勤資金</div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Income Banner -->
+                    <div class="mt-4 bg-gradient-to-r from-amber-950/40 via-red-950/30 to-amber-950/40 border border-amber-800/40 p-3.5 rounded-xl flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                                <i class="fa-solid fa-wheat-awn"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-300 font-bold">南瓜地圖穩定產能</div>
+                                <div class="text-xs text-amber-400/90">日收益預估 15,000+ 綁鑽</div>
+                            </div>
+                        </div>
+                        <span class="text-[11px] bg-amber-900/60 text-amber-200 px-2.5 py-1 rounded-full border border-amber-600/30">
+                            高收益養號
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Features Highlight List -->
+                <div class="lineage-frame p-5 sm:p-6 rounded-2xl">
+                    <h3 class="text-md font-bold text-amber-400 border-b border-amber-900/40 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-gem"></i> 帳號核心優勢細節 (Account Advantages)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-gray-300">
+                        <div class="flex items-start gap-2 bg-zinc-900/50 p-2.5 rounded-lg border border-zinc-800">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                            <span><strong class="text-amber-200">雙神魂天花板：</strong>變身與娃娃皆為 T1粉滿 + T2各兩隻。</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-zinc-900/50 p-2.5 rounded-lg border border-zinc-800">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                            <span><strong class="text-amber-200">極致爆擊比：</strong>總魔法爆擊率達 <span class="text-red-400 font-bold">555%</span> (未計入5智娃娃)。</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-zinc-900/50 p-2.5 rounded-lg border border-zinc-800">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                            <span><strong class="text-amber-200">天啟洗鍊完整：</strong>裝備天啟狀態皆為智力與魔爆最佳搭配。</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-zinc-900/50 p-2.5 rounded-lg border border-zinc-800">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                            <span><strong class="text-amber-200">全服名列前茅：</strong>PVP排名全服第2，黑市總7~8名/職業第2。</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator summary box -->
+                <div class="lineage-frame p-4 rounded-2xl bg-gradient-to-r from-zinc-900 via-amber-950/20 to-zinc-900 border-amber-800/50 flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                        <div class="text-xs text-amber-400/90 font-bold">裝備加總屬性試算 (From Equipment Sheet)</div>
+                        <div class="text-xs text-gray-400">當前篩選 16 件裝備加總</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-right">
+                            <div class="text-[10px] text-gray-400">總最終智力</div>
+                            <div id="calc-total-int" class="text-lg font-black text-amber-300 font-cinzel">88</div>
+                        </div>
+                        <div class="w-px h-8 bg-zinc-700"></div>
+                        <div class="text-right">
+                            <div class="text-[10px] text-gray-400">總最終魔爆</div>
+                            <div id="calc-total-crit" class="text-lg font-black text-red-400 font-cinzel">518 %</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- EQUIPMENT SECTION -->
+        <section id="equipment-section" class="lineage-frame p-5 sm:p-7 rounded-2xl">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-amber-900/40 pb-4 mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-amber-400 flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> 裝備詳細表 (Full Equipment Showcase)
+                    </h2>
+                    <p class="text-xs text-gray-400 mt-1">包含16項頂級裝備之原始智力、魔爆、附魔屬性與天啟洗鍊狀態</p>
+                </div>
+
+                <!-- Controls: Filter Tabs & Search Bar -->
+                <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <div class="flex rounded-lg bg-zinc-950 p-1 border border-zinc-800" id="filter-tabs">
+                        <button onclick="setCategory('all')" class="tab-btn px-3 py-1.5 text-xs rounded-md font-medium text-amber-300 bg-amber-900/50 border border-amber-700/50">全部 (16)</button>
+                        <button onclick="setCategory('defense')" class="tab-btn px-3 py-1.5 text-xs rounded-md font-medium text-gray-400 hover:text-gray-200">防具 (5)</button>
+                        <button onclick="setCategory('accessory')" class="tab-btn px-3 py-1.5 text-xs rounded-md font-medium text-gray-400 hover:text-gray-200">飾品 (9)</button>
+                        <button onclick="setCategory('weapon')" class="tab-btn px-3 py-1.5 text-xs rounded-md font-medium text-gray-400 hover:text-gray-200">武器/臂甲 (2)</button>
+                    </div>
+
+                    <div class="relative min-w-[180px]">
+                        <input type="text" id="search-input" onkeyup="filterEquipment()" placeholder="搜尋裝備名稱/屬性..." 
+                            class="w-full bg-zinc-950 text-xs text-gray-200 pl-8 pr-3 py-2 rounded-lg border border-zinc-800 focus:outline-none focus:border-amber-600">
+                        <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-2.5 text-gray-500 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABLE DISPLAY -->
+            <div class="overflow-x-auto">
+                <table class="w-full lineage-table text-left border-collapse min-w-[700px]">
+                    <thead>
+                        <tr class="text-xs font-bold uppercase tracking-wider">
+                            <th class="p-3 rounded-tl-lg">部位</th>
+                            <th class="p-3">裝備名稱</th>
+                            <th class="p-3 text-center">原始智力</th>
+                            <th class="p-3 text-center">原始魔爆 (上+下)</th>
+                            <th class="p-3 text-center">附魔魔爆</th>
+                            <th class="p-3">天啟狀態</th>
+                            <th class="p-3 text-center">最終智力</th>
+                            <th class="p-3 text-center rounded-tr-lg">最終魔爆</th>
+                        </tr>
+                    </thead>
+                    <tbody id="equipment-tbody" class="text-xs">
+                        <!-- Dynamic Injection -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Visual Grid View (Optional visual representation) -->
+            <div class="mt-8 pt-6 border-t border-zinc-800">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
+                    <i class="fa-solid fa-grid-2 text-amber-500"></i> 裝備快覽 (Quick Slot View)
+                </h3>
+                <div id="equipment-grid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2.5">
+                    <!-- Dynamic Grid Tiles -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / CALL TO ACTION -->
+        <footer class="lineage-frame rounded-2xl p-6 text-center space-y-4">
+            <div class="text-sm text-gray-300 font-bold">
+                這是一帳難求的全服頂尖法師帳號，擁有無可比擬的打寶與PVP能力
+            </div>
+            <p class="text-xs text-gray-500 max-w-xl mx-auto">
+                本網頁資訊完全依據實機截圖與詳細裝備表製作。意者歡迎透過下方按鈕聯繫賣家議價與了解移交流程。
+            </p>
+            <div class="pt-2">
+                <button onclick="openModal()" class="btn-gold px-8 py-2.5 rounded-xl text-sm font-bold shadow-lg">
+                    <i class="fa-solid fa-comment-dots mr-1"></i> 聯繫賣家洽談
+                </button>
+            </div>
+            <div class="text-[10px] text-zinc-600 pt-4 border-t border-zinc-800">
+                © MINITT 迷你天堂 帳號展示頁面 | Lineage Fan Showcase
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- CONTACT SELLER MODAL -->
+    <div id="contact-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="lineage-frame max-w-md w-full rounded-2xl p-6 relative border-amber-600/50 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center mx-auto mb-2 text-xl">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <h3 class="text-xl font-bold text-amber-300 font-serifTC">聯繫賣家 / 意向登記</h3>
+                <p class="text-xs text-gray-400 mt-1">請留下您的聯繫方式，賣家將儘快與您對接</p>
+            </div>
+
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block text-gray-300 font-bold mb-1">您的稱呼 / 遊戲暱稱</label>
+                    <input type="text" required placeholder="例如：玩家阿法" 
+                        class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-2.5 text-gray-200 focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-gray-300 font-bold mb-1">聯繫方式 (LINE ID / Discord / 電話)</label>
+                    <input type="text" required placeholder="例如：LINE ID: lineage_buyer" 
+                        class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-2.5 text-gray-200 focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-gray-300 font-bold mb-1">預算 / 諮詢訊息</label>
+                    <textarea rows="3" placeholder="請輸入您的預算或想詢問的帳號細節..." 
+                        class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-2.5 text-gray-200 focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full btn-gold py-3 rounded-xl font-bold text-sm shadow-md">
+                        <i class="fa-solid fa-paper-plane mr-1"></i> 送出聯繫請求
+                    </button>
+                </div>
+            </form>
+
+            <div id="modal-success-msg" class="hidden mt-4 p-3 bg-emerald-950/60 border border-emerald-600/40 rounded-lg text-emerald-300 text-center text-xs">
+                <i class="fa-solid fa-circle-check mr-1"></i> 訊息已成功送出！賣家將於第一時間與您聯繫。
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT LOGIC DATA & INTERACTION -->
+    <script>
+        // Data populated directly from provided Excel File
+        const equipmentData = [
+            { id: 1, slot: "頭盔", name: "死亡騎士頭盔", cat: "defense", origInt: 6, origCrit: 0, enchCrit: 10, apoc: "智力20+25+5", finalInt: 9, finalCrit: 10 },
+            { id: 2, slot: "斗篷", name: "火焰之影斗篷", cat: "defense", origInt: 6, origCrit: 0, enchCrit: 7, apoc: "智力20+20+15", finalInt: 9, finalCrit: 7 },
+            { id: 3, slot: "盔甲", name: "死亡騎士盔甲", cat: "defense", origInt: 6, origCrit: 0, enchCrit: 8, apoc: "智力20+20+20", finalInt: 9, finalCrit: 8 },
+            { id: 4, slot: "手套", name: "火焰之影手套", cat: "defense", origInt: 3, origCrit: 6, enchCrit: 8, apoc: "魔爆25+25+25+5", finalInt: 3, finalCrit: 25 },
+            { id: 5, slot: "T恤", name: "金古神T", cat: "defense", origInt: 5, origCrit: 2, enchCrit: "無視魔法等級7", enchCritNum: 0, apoc: "智力25+15+15", finalInt: 7, finalCrit: 2 },
+            { id: 6, slot: "臂甲", name: "水靈臂甲", cat: "weapon", origInt: "1+4", origIntNum: 5, origCrit: 0, enchCrit: 9, apoc: "智力20+15+20", finalInt: 7, finalCrit: 9 },
+            { id: 7, slot: "腰帶", name: "底比斯腰帶", cat: "accessory", origInt: 4, origCrit: 4, enchCrit: 8, apoc: "智力25+25/魔爆15", finalInt: 6, finalCrit: 13 },
+            { id: 8, slot: "靴子", name: "火影靴子", cat: "defense", origInt: 4, origCrit: 0, enchCrit: 5, apoc: "智力25+20+15", finalInt: 6, finalCrit: 5 },
+            { id: 9, slot: "左耳環", name: "5星族群", cat: "accessory", origInt: 0, origCrit: "23+8", origCritNum: 31, enchCrit: 10, apoc: "魔爆25+10+25+20", finalInt: 0, finalCrit: 73 },
+            { id: 10, slot: "右耳環", name: "4星紅盟耳", cat: "accessory", origInt: 7, origCrit: 17, enchCrit: 9, apoc: "智力25+25/魔爆15", finalInt: 9, finalCrit: 29 },
+            { id: 11, slot: "項鍊", name: "5星喚獸師", cat: "accessory", origInt: 0, origCrit: "31+8", origCritNum: 39, enchCrit: 8, apoc: "魔爆10+25+20+25", finalInt: 0, finalCrit: 84 },
+            { id: 12, slot: "武器", name: "5星聖晶", cat: "weapon", origInt: 4, origCrit: 14, enchCrit: 10, apoc: "魔爆20+25+20+5", finalInt: 4, finalCrit: 40 },
+            { id: 13, slot: "左上戒", name: "4星伊娃祝福", cat: "accessory", origInt: 0, origCrit: "12+10", origCritNum: 22, enchCrit: 8, apoc: "魔爆25+25+25+10", finalInt: 0, finalCrit: 55 },
+            { id: 14, slot: "右上戒", name: "4星底戒", cat: "accessory", origInt: "1+3", origIntNum: 4, origCrit: 13, enchCrit: 9, apoc: "智力25/魔爆20+25", finalInt: 5, finalCrit: 31 },
+            { id: 15, slot: "左下戒", name: "5星召戒", cat: "accessory", origInt: 5, origCrit: 12, enchCrit: 9, apoc: "魔爆20+25+25+15", finalInt: 5, finalCrit: 38 },
+            { id: 16, slot: "右下戒", name: "6星變戒", cat: "accessory", origInt: 0, origCrit: "20+9", origCritNum: 29, enchCrit: 8, apoc: "魔爆25+20+25+20", finalInt: 0, finalCrit: 70 }
+        ];
+
+        let currentCategory = 'all';
+
+        // Render table rows
+        function renderTable(items) {
+            const tbody = document.getElementById('equipment-tbody');
+            tbody.innerHTML = '';
+
+            let totalInt = 0;
+            let totalCrit = 0;
+
+            items.forEach(item => {
+                totalInt += item.finalInt;
+                totalCrit += item.finalCrit;
+
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-amber-900/10 transition';
+                tr.innerHTML = `
+                    <td class="p-3 font-bold text-amber-500/90">${item.slot}</td>
+                    <td class="p-3 font-bold text-gray-100 flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full ${item.cat==='weapon'?'bg-red-500':item.cat==='accessory'?'bg-purple-500':'bg-blue-500'}"></span>
+                        ${item.name}
+                    </td>
+                    <td class="p-3 text-center text-gray-400">${item.origInt}</td>
+                    <td class="p-3 text-center text-gray-400">${item.origCrit}</td>
+                    <td class="p-3 text-center text-gray-300 font-medium">${item.enchCrit}</td>
+                    <td class="p-3 text-amber-300/80">${item.apoc}</td>
+                    <td class="p-3 text-center font-bold text-amber-300 font-cinzel text-sm">${item.finalInt}</td>
+                    <td class="p-3 text-center font-bold text-red-400 font-cinzel text-sm">${item.finalCrit}%</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            // Update calculator summary
+            document.getElementById('calc-total-int').textContent = totalInt;
+            document.getElementById('calc-total-crit').textContent = totalCrit + ' %';
+        }
+
+        // Render grid view
+        function renderGrid(items) {
+            const grid = document.getElementById('equipment-grid');
+            grid.innerHTML = '';
+
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'eq-slot rounded-xl p-2.5 text-center flex flex-col justify-between h-24';
+                div.innerHTML = `
+                    <div class="text-[10px] text-amber-500/80 font-bold">${item.slot}</div>
+                    <div class="text-xs font-bold text-gray-200 truncate px-1">${item.name}</div>
+                    <div class="flex justify-between items-center text-[10px] pt-1 border-t border-zinc-800">
+                        <span class="text-amber-300">智+${item.finalInt}</span>
+                        <span class="text-red-400 font-bold">爆${item.finalCrit}%</span>
+                    </div>
+                `;
+                grid.appendChild(div);
+            });
+        }
+
+        // Filter Functionality
+        function setCategory(category) {
+            currentCategory = category;
+            
+            // Update button styles
+            const buttons = document.querySelectorAll('#filter-tabs button');
+            buttons.forEach(btn => {
+                btn.className = 'tab-btn px-3 py-1.5 text-xs rounded-md font-medium text-gray-400 hover:text-gray-200';
+            });
+            event.target.className = 'tab-btn px-3 py-1.5 text-xs rounded-md font-medium text-amber-300 bg-amber-900/50 border border-amber-700/50';
+
+            filterEquipment();
+        }
+
+        function filterEquipment() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = equipmentData.filter(item => {
+                const matchCategory = (currentCategory === 'all') || (item.cat === currentCategory);
+                const matchQuery = item.name.toLowerCase().includes(query) || 
+                                   item.slot.toLowerCase().includes(query) || 
+                                   item.apoc.toLowerCase().includes(query);
+                return matchCategory && matchQuery;
+            });
+
+            renderTable(filtered);
+            renderGrid(filtered);
+        }
+
+        // Modal Controls
+        function openModal() {
+            document.getElementById('contact-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('contact-modal').classList.add('hidden');
+            document.getElementById('modal-success-msg').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('modal-success-msg').classList.remove('hidden');
+            setTimeout(() => {
+                closeModal();
+            }, 2500);
+        }
+
+        // Initial Initialization
+        window.onload = function() {
+            renderTable(equipmentData);
+            renderGrid(equipmentData);
+        };
+    </script>
+</body>
+</html>
